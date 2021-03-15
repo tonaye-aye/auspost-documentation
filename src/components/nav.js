@@ -192,18 +192,6 @@ function Nav({ modules, open, setOpen }) {
               Get started
             </Typography>
           </ListItem>
-          <ListItem
-            component={Link}
-            to="/"
-            selected={selectedIndex === 0}
-            onClick={(event) => handleNavClick(event, 0)}
-            button
-          >
-            <ListItemIcon>
-              <ArrowRightIcon color="disabled" />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItem>
           {modules.filter(starterNav).map(createNavLink)}
           <Box m={1} />
           <ListItem>

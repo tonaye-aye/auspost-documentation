@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-
-import { Box, Button, Typography } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 
 const Home = () => {
   return (
@@ -15,12 +13,10 @@ const Home = () => {
           Adobe, Yesmail or any other Email Service Provider (ESP).
         </Typography>
         <Typography variant="h6" gutterBottom>
-          Ready to get started? Begin with the Base and follow along:
+          Ready to get started? Begin with the Base, use the left navigation to
+          find the first steps.
         </Typography>
       </Box>
-      <Button component={Link} to={'/base'} variant="contained" color="primary">
-        Base Template
-      </Button>
     </Box>
   )
 }
