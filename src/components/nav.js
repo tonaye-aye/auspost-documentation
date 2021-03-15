@@ -8,6 +8,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles'
 import {
   AppBar,
   Box,
+  Button,
   Divider,
   Drawer,
   IconButton,
@@ -48,6 +49,11 @@ const useStyles = makeStyles((theme) => ({
   hide: {
     display: 'none'
   },
+  toolBar: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
   drawer: {
     width: drawerWidth,
     flexShrink: 0
@@ -66,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function Nav({ modules, open, setOpen }) {
-  const [selectedIndex, setSelectedIndex] = React.useState(1)
+  const [selectedIndex, setSelectedIndex] = React.useState(0)
 
   const classes = useStyles()
   const theme = useTheme()
@@ -151,7 +157,7 @@ function Nav({ modules, open, setOpen }) {
           [classes.appBarShift]: open
         })}
       >
-        <Toolbar>
+        <Toolbar className={classes.toolBar}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -164,6 +170,16 @@ function Nav({ modules, open, setOpen }) {
           <Typography variant="h6" noWrap>
             Auspost email builder
           </Typography>
+          <Box style={{ flex: 1, textAlign: 'right' }}>
+            <Button
+              variant="contained"
+              component={Link}
+              to={'/'}
+              onClick={(event) => handleNavClick(event, 0)}
+            >
+              Home
+            </Button>
+          </Box>
         </Toolbar>
       </AppBar>
       <Drawer

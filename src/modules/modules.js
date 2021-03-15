@@ -3,7 +3,7 @@ const modules = [
     id: 1,
     name: `baseModule`,
     type: `starter`,
-    path: `/base`,
+    path: `/get-started/base`,
     data: {
       heading: `Base`,
       tag: `Use the base HTML to start your project`,
@@ -407,7 +407,7 @@ const modules = [
     id: 2,
     name: `headerModule`,
     type: `core`,
-    path: `/header`,
+    path: `/core/header`,
     data: {
       heading: `Header`,
       tag: `After the base HTML is set up, we can add modules`,
@@ -473,7 +473,7 @@ const modules = [
     id: 3,
     name: `introModule`,
     type: `core`,
-    path: `/introduction`,
+    path: `/core/introduction`,
     data: {
       heading: `Introduction`,
       tag: `Place the Introduction module right after the Header module`,
@@ -601,7 +601,7 @@ const modules = [
     id: 4,
     name: `bodyModule`,
     type: `core`,
-    path: `/body`,
+    path: `/core/body`,
     data: {
       heading: `Body`,
       tag: `The body module will contain the non-core modules`,
@@ -629,7 +629,7 @@ const modules = [
     id: 5,
     name: `footerModule`,
     type: `core`,
-    path: `/footer`,
+    path: `/core/footer`,
     data: {
       heading: `Footer`,
       tag: `The Footer is the final core module to be added`,
