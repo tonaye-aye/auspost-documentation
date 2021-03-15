@@ -3,7 +3,9 @@ import { Box, Typography } from '@material-ui/core'
 const Home = () => {
   return (
     <Box mt={10} p={2}>
-      <Typography variant="h3">Get Started</Typography>
+      <Typography variant="h3" gutterBottom>
+        Get Started
+      </Typography>
       <Typography variant="h5" gutterBottom>
         Auspost template builder
       </Typography>
